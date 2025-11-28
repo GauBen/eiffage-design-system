@@ -158,6 +158,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.27.6, @babel/runtime@npm:^7.28.4":
+  version: 7.28.4
+  resolution: "@babel/runtime@npm:7.28.4"
+  checksum: 10c0/792ce7af9750fb9b93879cc9d1db175701c4689da890e6ced242ea0207c9da411ccf16dc04e689cc01158b28d7898c40d75598f4559109f761c12ce01e959bf7
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.27.2":
   version: 7.27.2
   resolution: "@babel/template@npm:7.27.2"
@@ -597,6 +604,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jahia/javascript-modules-library@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@jahia/javascript-modules-library@npm:1.0.1"
+  dependencies:
+    dotenv: "npm:^17.2.2"
+  peerDependencies:
+    i18next: ^25.0.0
+    react: ^19.0.0
+    react-dom: ^19.0.0
+    react-i18next: ^15.4.0 || ^16.0.0
+  peerDependenciesMeta:
+    i18next:
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+    react-i18next:
+      optional: true
+  checksum: 10c0/8ecb87fa217dbd2e96ae555299beba29fd9f745c26d54d5ad1d77586955d52fdd65281f17a554c37440a893393d29056cccf06cde3903b4dbbbac9874c837ef9
+  languageName: node
+  linkType: hard
+
+"@jahia/vite-plugin@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@jahia/vite-plugin@npm:1.0.1"
+  dependencies:
+    "@rollup/pluginutils": "npm:^5.2.0"
+    magic-string: "npm:^0.30.18"
+    tinyglobby: "npm:^0.2.14"
+  peerDependencies:
+    vite: ">=6.0.0"
+  bin:
+    jahia-deploy: bin/jahia-deploy.js
+  checksum: 10c0/2528d3e116081cdeade2826c4307c55d918990bd53eb634de0d676914964f5e73ae6c61f4bc7d703b3f4cd03a534025536ce543934e397a544d80efd66675f7c
+  languageName: node
+  linkType: hard
+
 "@joshwooding/vite-plugin-react-docgen-typescript@npm:0.6.1":
   version: 0.6.1
   resolution: "@joshwooding/vite-plugin-react-docgen-typescript@npm:0.6.1"
@@ -843,7 +888,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/pluginutils@npm:^5.0.2":
+"@rollup/pluginutils@npm:^5.0.2, @rollup/pluginutils@npm:^5.2.0":
   version: 5.3.0
   resolution: "@rollup/pluginutils@npm:5.3.0"
   dependencies:
@@ -1257,7 +1302,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.2.7":
+"@types/react@npm:^19.1.2, @types/react@npm:^19.2.7":
   version: 19.2.7
   resolution: "@types/react@npm:19.2.7"
   dependencies:
@@ -1623,7 +1668,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"design-system@workspace:packages/design-system":
+"design-system@workspace:*, design-system@workspace:packages/design-system":
   version: 0.0.0-use.local
   resolution: "design-system@workspace:packages/design-system"
   dependencies:
@@ -1670,6 +1715,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dotenv@npm:^17.2.2":
+  version: 17.2.3
+  resolution: "dotenv@npm:17.2.3"
+  checksum: 10c0/c884403209f713214a1b64d4d1defa4934c2aa5b0002f5a670ae298a51e3c3ad3ba79dfee2f8df49f01ae74290fcd9acdb1ab1d09c7bfb42b539036108bb2ba0
+  languageName: node
+  linkType: hard
+
 "eastasianwidth@npm:^0.2.0":
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
@@ -1683,6 +1735,22 @@ __metadata:
   dependencies:
     typescript: "npm:^5.9.3"
     typescript-plugin-css-modules: "npm:^5.2.0"
+  languageName: unknown
+  linkType: soft
+
+"eiffage-template-set@workspace:packages/template-set":
+  version: 0.0.0-use.local
+  resolution: "eiffage-template-set@workspace:packages/template-set"
+  dependencies:
+    "@jahia/javascript-modules-library": "npm:^1.0.1"
+    "@jahia/vite-plugin": "npm:^1.0.1"
+    "@types/react": "npm:^19.1.2"
+    design-system: "workspace:*"
+    i18next: "npm:^25.0.2"
+    modern-normalize: "npm:^3.0.1"
+    react: "npm:^19.1.0"
+    react-i18next: "npm:^15.5.1"
+    vite: "npm:^7.0.0"
   languageName: unknown
   linkType: soft
 
@@ -2110,6 +2178,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"html-parse-stringify@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "html-parse-stringify@npm:3.0.1"
+  dependencies:
+    void-elements: "npm:3.1.0"
+  checksum: 10c0/159292753d48b84d216d61121054ae5a33466b3db5b446e2ffc093ac077a411a99ce6cbe0d18e55b87cf25fa3c5a86c4d8b130b9719ec9b66623259000c72c15
+  languageName: node
+  linkType: hard
+
 "http-cache-semantics@npm:^4.1.1":
   version: 4.2.0
   resolution: "http-cache-semantics@npm:4.2.0"
@@ -2134,6 +2211,20 @@ __metadata:
     agent-base: "npm:^7.1.2"
     debug: "npm:4"
   checksum: 10c0/f729219bc735edb621fa30e6e84e60ee5d00802b8247aac0d7b79b0bd6d4b3294737a337b93b86a0bd9e68099d031858a39260c976dc14cdbba238ba1f8779ac
+  languageName: node
+  linkType: hard
+
+"i18next@npm:^25.0.2":
+  version: 25.6.3
+  resolution: "i18next@npm:25.6.3"
+  dependencies:
+    "@babel/runtime": "npm:^7.28.4"
+  peerDependencies:
+    typescript: ^5
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/cbeaff5641247ef724dbf1b609df2bc24306b610cfefc6afab1f574e3c6e4171731a1959915c82c606bdb9a535da374ac14d43c7849e680482e9b0d8a93c19fb
   languageName: node
   linkType: hard
 
@@ -2386,7 +2477,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.30.0, magic-string@npm:^0.30.17":
+"magic-string@npm:^0.30.0, magic-string@npm:^0.30.17, magic-string@npm:^0.30.18":
   version: 0.30.21
   resolution: "magic-string@npm:0.30.21"
   dependencies:
@@ -2896,7 +2987,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0, react@npm:^19.2.0":
+"react-i18next@npm:^15.5.1":
+  version: 15.7.4
+  resolution: "react-i18next@npm:15.7.4"
+  dependencies:
+    "@babel/runtime": "npm:^7.27.6"
+    html-parse-stringify: "npm:^3.0.1"
+  peerDependencies:
+    i18next: ">= 23.4.0"
+    react: ">= 16.8.0"
+    typescript: ^5
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+    typescript:
+      optional: true
+  checksum: 10c0/643c5d3ced4b44084c871a55e876159561c14f378f90bf53286c1291082703e293573da18ad692b43b357b60d2f7251bc417feb0b522de8cec5c414e5ebdf6c1
+  languageName: node
+  linkType: hard
+
+"react@npm:^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0, react@npm:^19.1.0, react@npm:^19.2.0":
   version: 19.2.0
   resolution: "react@npm:19.2.0"
   checksum: 10c0/1b6d64eacb9324725bfe1e7860cb7a6b8a34bc89a482920765ebff5c10578eb487e6b46b2f0df263bd27a25edbdae2c45e5ea5d81ae61404301c1a7192c38330
@@ -3331,12 +3443,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"template-set@workspace:packages/template-set":
-  version: 0.0.0-use.local
-  resolution: "template-set@workspace:packages/template-set"
-  languageName: unknown
-  linkType: soft
-
 "tiny-invariant@npm:^1.3.3":
   version: 1.3.3
   resolution: "tiny-invariant@npm:1.3.3"
@@ -3344,7 +3450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:^0.2.12, tinyglobby@npm:^0.2.15":
+"tinyglobby@npm:^0.2.12, tinyglobby@npm:^0.2.14, tinyglobby@npm:^0.2.15":
   version: 0.2.15
   resolution: "tinyglobby@npm:0.2.15"
   dependencies:
@@ -3511,7 +3617,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^7.2.4":
+"vite@npm:^7.0.0, vite@npm:^7.2.4":
   version: 7.2.4
   resolution: "vite@npm:7.2.4"
   dependencies:
@@ -3563,6 +3669,13 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10c0/26aa0cad01d6e00f17c837b2a0587ab52f6bd0d0e64606b4220cfc58fa5fa76a4095ef3ea27c886bea542a346363912c4fad9f9462ef1e6757262fedfd5196b2
+  languageName: node
+  linkType: hard
+
+"void-elements@npm:3.1.0":
+  version: 3.1.0
+  resolution: "void-elements@npm:3.1.0"
+  checksum: 10c0/0b8686f9f9aa44012e9bd5eabf287ae0cde409b9a2854c5a2335cb83920c957668ac5876e3f0d158dd424744ac411a7270e64128556b451ed3bec875ef18534d
   languageName: node
   linkType: hard
 

@@ -1,4 +1,43 @@
 {
-  "name": "template-set",
-  "type": "module"
+  "name": "eiffage-template-set",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist",
+    "src/**/*.cnd",
+    "settings",
+    "static"
+  ],
+  "scripts": {
+    "build": "tsc --noEmit && vite build && run package",
+    "clean": "rm -rf dist/",
+    "deploy": "jahia-deploy",
+    "dev": "vite build --watch",
+    "format": "prettier --write --list-different .",
+    "lint": "eslint .",
+    "package": "yarn pack --out dist/package.tgz",
+    "watch": "run dev",
+    "watch:callback": "run package && run deploy"
+  },
+  "dependencies": {
+    "design-system": "workspace:*",
+    "modern-normalize": "^3.0.1"
+  },
+  "devDependencies": {
+    "@jahia/javascript-modules-library": "^1.0.1",
+    "@jahia/vite-plugin": "^1.0.1",
+    "@types/react": "^19.1.2",
+    "i18next": "^25.0.2",
+    "react": "^19.1.0",
+    "react-i18next": "^15.5.1",
+    "vite": "^7.0.0"
+  },
+  "jahia": {
+    "name": "eiffage-template-set",
+    "snapshot": true,
+    "module-dependencies": "default",
+    "module-type": "templatesSet",
+    "server": "dist/server/index.js",
+    "static-resources": "/dist/client,/dist/assets,/locales,/images,/icons"
+  }
 }
