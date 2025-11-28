@@ -1,0 +1,4 @@
+[eiffagemix:footerChildren] mixin
+
+[eiffage:footer] > jnt:content, eiffagemix:component orderable
+ + * (eiffagemix:footerChildren)

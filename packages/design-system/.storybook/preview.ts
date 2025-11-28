@@ -8,4 +8,5 @@ export default definePreview({
   parameters: {
     docs: { codePanel: true },
   },
+  tags: ["autodocs"],
 });

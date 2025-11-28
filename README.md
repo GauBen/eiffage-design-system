@@ -18,6 +18,8 @@ You'll find two packages in this monorepo:
   yarn workspace design-system storybook dev -p 6006
   ```
 
+  ![Screenshot of the footer in Storybook](docs/storybook.png)
+
 - `packages/template-set`: A Jahia template set that integrates the design system components.
 
   The goal is to provide the best-in-class edition experience for content editors in Jahia, while leveraging the design system components.
@@ -31,3 +33,5 @@ You'll find two packages in this monorepo:
   # Start the dev mode
   yarn workspace eiffage-template-set dev
   ```
+
+  ![Screenshot of the footer in Jahia](docs/jahia.png)
