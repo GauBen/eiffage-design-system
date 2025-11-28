@@ -1,0 +1,7 @@
+{
+  "name": "eiffage-design-system",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
