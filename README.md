@@ -1,37 +1,37 @@
-# Eiffage Design System POC
+# POC Design System Eiffage
 
-This repository contains a Proof of Concept (POC) for the Eiffage Design System, and its integration with Jahia.
+Ce dépôt contient une Preuve de Concept (POC) pour le Design System Eiffage, et son intégration avec Jahia.
 
-You'll find two packages in this monorepo:
+Vous trouverez deux paquets dans ce monorepo :
 
-- `packages/design-system`: Composable React design system, agnostic of all frameworks.
+- `packages/design-system`: Un design system React composable, agnostique de tout framework.
 
-  The design system contains a single component for this POC: a `<Footer>` component.
+  ![Capture d'écran du footer dans Storybook](docs/storybook.png)
 
-  The design system is documented using Storybook.
+  Le design system contient un seul composant pour ce POC : un composant `<Footer>`.
+
+  Le design system est documenté avec Storybook.
 
   ```bash
-  # Install dependencies
+  # Installer les dépendances
   yarn install
 
-  # To start Storybook for the design system
+  # Pour démarrer Storybook pour le design system
   yarn workspace design-system storybook dev -p 6006
   ```
 
-  ![Screenshot of the footer in Storybook](docs/storybook.png)
+- `packages/template-set`: Un template set Jahia qui intègre les composants du design system.
 
-- `packages/template-set`: A Jahia template set that integrates the design system components.
+  ![Capture d'écran du footer dans Jahia](docs/jahia.png)
 
-  The goal is to provide the best-in-class edition experience for content editors in Jahia, while leveraging the design system components.
+  L'objectif est de fournir la meilleure expérience d'édition pour les éditeurs dans Jahia, tout en exploitant les composants du design system.
 
-  See [./packages/template-set/README.md](./packages/template-set/README.md) for more details on how to use the template set in Jahia.
+  Voir [./packages/template-set/README.md](./packages/template-set/README.md) pour plus de détails techniques.
 
   ```bash
-  # Start Jahia
+  # Démarrer Jahia
   docker compose up --wait
 
-  # Start the dev mode
+  # Démarrer le mode de développement
   yarn workspace eiffage-template-set dev
   ```
-
-  ![Screenshot of the footer in Jahia](docs/jahia.png)
