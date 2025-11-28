@@ -9,7 +9,7 @@ jahiaComponent(
     componentType: "view",
     nodeType: "eiffage:footer",
   },
-  (_, { renderContext }) => (
+  () => (
     <Footer>
       <RenderChildren />
     </Footer>

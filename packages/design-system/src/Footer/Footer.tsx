@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import classes from "./styles.module.css";
 
 export const Footer = ({ children }: { children: ReactNode }) => (
@@ -17,7 +17,7 @@ export const FooterSocialColumn = ({
   title,
   children,
 }: {
-  title: string;
+  title: ReactNode;
   children: ReactNode;
 }) => (
   <div className={classes.socialColumn}>
@@ -30,7 +30,7 @@ export const FooterLinkColumn = ({
   title,
   children,
 }: {
-  title: string;
+  title: ReactNode;
   children: ReactNode;
 }) => (
   <div className={classes.linkColumn}>
